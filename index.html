@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neil Conley — Senior Full-Stack Engineer</title>
+<meta name="description" content="Neil Conley — senior full-stack engineer. Founding engineer at Remilia Corporation. Go, TypeScript/React, Keycloak, Kubernetes.">
+<style>
+  :root {
+    --fg: #1a1a1a;
+    --muted: #666;
+    --faint: #999;
+    --rule: #e4e4e4;
+    --accent: #1a1a1a;
+    --bg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #e8e8e8;
+      --muted: #a0a0a0;
+      --faint: #777;
+      --rule: #2c2c2c;
+      --accent: #e8e8e8;
+      --bg: #121212;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+  a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--faint); }
+  a:hover { text-decoration-color: var(--fg); }
+  header h1 {
+    font-size: 1.6rem;
+    letter-spacing: .01em;
+    font-weight: 700;
+  }
+  .contact {
+    margin-top: .35rem;
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  .contact span + span::before { content: "·"; margin: 0 .5em; color: var(--faint); }
+  .summary { margin-top: 1.5rem; }
+  section { margin-top: 2.75rem; }
+  h2 {
+    font-size: .78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--faint);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: .5rem;
+    margin-bottom: 1.25rem;
+  }
+  .job + .job { margin-top: 2rem; }
+  .job-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: .25rem .75rem;
+  }
+  .job-head h3 { font-size: 1rem; font-weight: 650; }
+  .job-head h3 em { font-style: normal; font-weight: 400; color: var(--muted); }
+  .job-meta { font-size: .85rem; color: var(--faint); white-space: nowrap; }
+  .job p { margin-top: .6rem; }
+  .edu { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem .75rem; }
+  .edu + .edu { margin-top: .9rem; }
+  .edu strong { font-weight: 650; }
+  .edu span { color: var(--muted); }
+  dl.skills { display: grid; grid-template-columns: max-content 1fr; gap: .5rem 1.25rem; }
+  dl.skills dt { font-weight: 600; font-size: .9rem; white-space: nowrap; }
+  dl.skills dd { color: var(--muted); font-size: .95rem; }
+  @media (max-width: 480px) {
+    body { padding-top: 2.5rem; }
+    dl.skills { grid-template-columns: 1fr; gap: 0; }
+    dl.skills dd { margin-bottom: .75rem; }
+    .job-meta { white-space: normal; }
+  }
+  footer { margin-top: 3.5rem; font-size: .8rem; color: var(--faint); }
+  @media print {
+    body { padding: 0; max-width: none; font-size: 12px; }
+    a { text-decoration: none; }
+    footer { display: none; }
+  }
+  .role { margin-top: .15rem; font-size: .95rem; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Neil Conley</h1>
+  <p class="role">Senior Full-Stack Engineer</p>
+  <p class="contact">
+    <span>Santa Ana, CA</span>
+    <span><a href="tel:+12674753257">(267) 475-3257</a></span>
+    <span><a href="mailto:neilsemail@me.com">neilsemail@me.com</a></span>
+    <span>U.S. Citizen</span>
+  </p>
+  <p class="contact">
+    <span><a href="https://github.com/gummyfrog">github.com/gummyfrog</a></span>
+    <span><a href="https://linkedin.com/in/neil-conley">linkedin.com/in/neil-conley</a></span>
+  </p>
+  <p class="summary">
+    Founding engineer at Remilia. U.S. citizen, based in Southern California.
+  </p>
+</header>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>Remilia Corporation <em>— Founding Engineer (contract)</em></h3>
+      <span class="job-meta">Dec 2022 – Present · Remote</span>
+    </div>
+    <p>
+      Sole engineer for the first eighteen months. Design and ship the company’s
+      identity platform, an IAM layer on Keycloak that sites across the ecosystem
+      adopt like Google sign-in. Grow it into RemiliaNET, the company’s core social
+      platform. Carry the platform through the refactor to its current architecture
+      as engineering grows from one to five. Ship the web layer of the CULT token
+      launch, closing a $20M raise.
+    </p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <h3>Temple University Telecommunications <em>— VoIP Software Engineer (full-time)</em></h3>
+      <span class="job-meta">Nov 2022 – Present · Remote</span>
+    </div>
+    <p>
+      Core engineer on the university’s OpenSIPS/FreeSWITCH VoIP platform: SIP
+      routing, media, and WebRTC across a microservices mesh. Lead development of a
+      self-service platform for the infrastructure org, covering Kubernetes
+      provisioning, permission management, and F5 self-service.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="edu">
+    <div><strong>Temple University</strong> <span>— BS in Computer Science, Summa Cum Laude</span></div>
+    <span class="job-meta">May 2024 · Philadelphia, PA</span>
+  </div>
+  <div class="edu">
+    <div><strong>Montgomery County Community College</strong> <span>— AS in Computer Science, Cum Laude</span></div>
+    <span class="job-meta">May 2022 · Blue Bell, PA</span>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Go (Golang), TypeScript/React, Java, SQL</dd>
+    <dt>Identity &amp; Auth</dt><dd>Keycloak (custom Java SPIs and themes), OIDC/OAuth2, anti-abuse systems</dd>
+    <dt>Backend</dt><dd>Distributed systems, Node/Express, PostgreSQL, MongoDB, Redis, WebSockets/SSE realtime</dd>
+    <dt>Infrastructure</dt><dd>Linux, Docker, Kubernetes, Helm, GitLab/GitHub Actions CI/CD, nginx/Caddy, AWS</dd>
+    <dt>Other</dt><dd>Intermediate Mandarin speaker · iOS App Store author · open-source contributor</dd>
+  </dl>
+</section>
+
+<footer>Neil Conley · 2026</footer>
+
+</body>
+</html>
